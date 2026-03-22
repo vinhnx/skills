@@ -1,6 +1,6 @@
+import { existsSync } from 'fs';
 import { homedir } from 'os';
 import { join } from 'path';
-import { existsSync } from 'fs';
 import { xdgConfig } from 'xdg-basedir';
 import type { AgentConfig, AgentType } from './types.ts';
 
@@ -408,6 +408,15 @@ export const agents: Record<AgentType, AgentConfig> = {
     globalSkillsDir: join(home, '.adal/skills'),
     detectInstalled: async () => {
       return existsSync(join(home, '.adal'));
+    },
+  },
+  vtcode: {
+    name: 'vtcode',
+    displayName: 'VT Code',
+    skillsDir: '.vtcode/skills',
+    globalSkillsDir: join(home, '.vtcode/skills'),
+    detectInstalled: async () => {
+      return existsSync(join(home, '.vtcode'));
     },
   },
   universal: {
