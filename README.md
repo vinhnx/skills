@@ -3,7 +3,7 @@
 The CLI for the open agent skills ecosystem.
 
 <!-- agent-list:start -->
-Supports **OpenCode**, **Claude Code**, **Codex**, **Cursor**, and [39 more](#available-agents).
+Supports **OpenCode**, **Claude Code**, **Codex**, **Cursor**, and [41 more](#available-agents).
 <!-- agent-list:end -->
 
 ## Install a Skill
@@ -248,6 +248,7 @@ Skills can be installed to any of these agents:
 | Neovate | `neovate` | `.neovate/skills/` | `~/.neovate/skills/` |
 | Pochi | `pochi` | `.pochi/skills/` | `~/.pochi/skills/` |
 | AdaL | `adal` | `.adal/skills/` | `~/.adal/skills/` |
+| VT Code | `vtcode` | `.agents/skills/` | `~/.vtcode/skills/` |
 <!-- supported-agents:end -->
 
 > [!NOTE]
